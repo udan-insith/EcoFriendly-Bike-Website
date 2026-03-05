@@ -137,7 +137,7 @@ html {
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--black);
     color: var(--white);
     overflow: hidden;
     line-height: 1.7;
@@ -250,3 +250,38 @@ body {
 }
 
 .preload-box.loaded .preload-circle { animation-iteration-count: 1; }
+
+/* NAVBAR */ 
+.menu {
+    background-color: var(--yellow-green);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-size: 2.25rem;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    animation-name: hoverEffect;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: 1s all ease;
+}
+
+@keyframes hoverEffect {
+    from {
+        text-decoration: none;
+    }
+    to {
+        
+        text-underline-position: 10px;
+    }
+}
