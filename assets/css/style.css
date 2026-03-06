@@ -219,6 +219,35 @@ body {
     transition: var(--transition-1);
 }
 
+.btn:is(:hover, :focus-visible) {
+    border-radius: 0;
+    border-top-right-radius: var(--radius-20);
+}
+
+.btn-primary {
+    background-color: var(--rich-black-fogra-29);
+    color: var(--white);
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+    background-color: var(--yellow-green);
+    color: var(--white);
+}
+
+.btn-secondary {
+    color: var(--smoky-black);
+    box-shadow: inset 0 0 0 2px var(--yellow-green);
+}
+
+.btn-secondary:is(:hover, :focus-visible) {
+    background-color: var(--yellow-green);
+    color: var(--white);
+}
+
+.w-100 {
+    width: 100%;
+}
+
 
 /* PRELOADER */
 .preload-box {
@@ -333,3 +362,43 @@ body {
 }
 
 /* HERO */
+.hero-list {
+    display: none;
+}
+
+.hero {
+    position: relative;
+    background-color: var(--yellow-green);
+    padding-block: calc(var(--section-padding) + 60px) 0;
+    margin-block-end: var(--section-padding);  
+}
+
+.hero .container {
+    display: grid;
+    gap: 50px;
+}
+
+.hero-title {
+    color: var(--white);
+    text-align: center;
+    line-height: 1.4;
+    margin-block-end: 30px;
+}
+
+.hero-title .span {
+    display: inline;
+    color: var(--smoky-black);
+}
+
+.hero .btn {
+    margin-inline: auto;
+}
+
+.hero .btn:is(:hover, :focus-visible) {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.hero-banner {
+    margin-block-end: -15%;
+}
