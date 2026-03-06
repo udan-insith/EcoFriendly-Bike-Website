@@ -145,7 +145,6 @@ body {
     overflow-x: hidden;
     line-height: 1.7;
     font-size: 1.6rem;
-    min-height: 300vh;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -332,3 +331,5 @@ body {
     text-transform: uppercase;
     padding: 10px;
 }
+
+/* HERO */
