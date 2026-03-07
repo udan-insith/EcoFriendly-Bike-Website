@@ -181,7 +181,7 @@ body {
 .h4,
 .h5,
 .h6 {
-    color: var(--ff-quicksand);
+    color: var(--smoky-black);
     line-height: 1.3;
 }
 
@@ -485,3 +485,11 @@ body {
     gap: 10px;
     margin-block-end: 10px;
 }
+
+.about-item ion-icon {
+    flex-shrink: 0;
+    color: var(--yellow-green);
+    font-size: 2rem;
+}
+
+.about-item
